@@ -1,10 +1,9 @@
 provider:
-  name: faas
+  name: openfaas
   gateway: http://localhost:8080  # can be a remote server
 
 functions:
   nslookup:
     lang: Dockerfile
-    handler: .
-    fprocess: xargs nslookup
+    handler: ./nslookup
     image: bibarrav/openfaas-nslookup:latest

@@ -1,4 +1,4 @@
-# nslookup_faas
+# nslookup for OpenFaaS
 Simple nslookup as a function for OpenFaaS
 
-Details on how to use soon.
+The output is encoded to Base64 to better interaction (ex LogicApp)
